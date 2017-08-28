@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IT Club Oberland - JS Training</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="lib/normalize/normalize.css">
+    <link rel="stylesheet" href="lib/test/mocha.min.css" />
+    <link rel="stylesheet" href="css/app.css">
+
+    <script src="lib/test/should.min.js"></script>
+    <script src="lib/test/mocha.min.js"></script>
+</head>
+
+<body>
+    <h3>Javascript Arrays Advanced</h3>
+    <h2>Find the murderer!</h2>
+    <p>
+        <img src="https://camo.githubusercontent.com/5abd54dbc8caa021e39fa17e0153c9cc00e841a6/68747470733a2f2f63646e322e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f757365722d32332f3132382f557365725f43796265726372696d696e616c2e706e67" style="float:left" /> So you have a train travelling through many cities called "Passengers" (in the file "js/passengers.js"). Every person in this train is somehow related at least to another one. While the train goes through the cities, something is happend: The engineman is murdered! An investigator is assigned to find the murder by the local government. He does not let them passengers go before the investigation process is finished.
+    </p>
+    <p>
+        The investigator has many questions about the passengers. So you need to help him by writing appropriate functions (in "js/chapters/chapter-xx.js") for finding the murderer.
+    </p>
+    <p>
+        You need the help the investigator in his enquiry. You have to implement (write) the body of the functions below in the right way. Any error in your function reduces the healthy of the investigation. So be carefull with your code, this very vital. The murderer is still in the train!!!!!
+    </p>
+    <p>
+        The tests need the following functions are implemented. Please provide the right implementations using the array "Passengers" from the file "js/passengers.js"
+    </p>
+    <mark style="background:skyblue">DO NOT open your console</mark>
+    <div id="mocha"></div>
+
+    <script>
+        mocha.setup('bdd')
+
+    </script>
+    <script src="js/passengers.js"></script>
+    <script src="js/chapters/chapter-01.js"></script>
+    <script src="js/chapters/chapter-02.js"></script>
+    <script src="js/chapters/chapter-03.js"></script>
+    <script src="js/chapters/chapter-04.js"></script>
+    <script src="js/tests.js"></script>
+    <script>
+        mocha.checkLeaks();
+        mocha.run();
+    </script>
+</body>
+
+</html>
