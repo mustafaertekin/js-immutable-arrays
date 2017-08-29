@@ -26,29 +26,47 @@
 
 
 function findNumberOfPassengers(pPassengers){
-    return pPassengers;
+    return pPassengers.length;
 }
 
 function findPersonByIndex(pPassengers, pIndex){
-    return pPassengers;
+    return pPassengers[pIndex-1].firstname;
 }
 
 function findNumberOfWomen(pPassengers){
-    return pPassengers;
+    var theWomen = pPassengers.filter(function(pPerson) {
+        return pPerson.gender == 'F';
+    });
+    return theWomen.length;
 }
 
 function findNumberOfMen(pPassengers){
-    return pPassengers;
+    var theMen = pPassengers.filter(function(pPerson) {
+        return pPerson.gender == 'M';
+    });
+    return theMen.length;
 }
 
 function findPersonByTicketId(pPassengers, pId){
-    return pPassengers;
+    var result = pPassengers.find(function(pPerson) {
+        return pPerson.id == pId;
+    });
+    return result.lastname;
+    
+    // .find returns the object which is found
+    // .filter returns a new array consist of the filtered elements
 }
 
 function findPassengersWithNoChildren(pPassengers){
-    return pPassengers;
+    var result = pPassengers.filter(function(pPerson) {
+        return pPerson.children[0] == undefined;
+    });
+    return result.length;
 }
 
 function findUnderagePassengers(pPassengers){
-    return pPassengers;
+    var result = pPassengers.filter(function(pPerson) {
+        return pPerson.birth.getUTCFullYear() > 1999;
+    });
+    return result.length;
 }
