@@ -59,14 +59,14 @@ function findPersonByTicketId(pPassengers, pId){
 
 function findPassengersWithNoChildren(pPassengers){
     var result = pPassengers.filter(function(pPerson) {
-        return pPerson.children[0] == undefined;
+       return pPerson.children.length == 0;
     });
     return result.length;
 }
 
 function findUnderagePassengers(pPassengers){
     var result = pPassengers.filter(function(pPerson) {
-        return pPerson.birth.getUTCFullYear() > 1999;
+        return ((new Date().getFullYear() - new Date(pPerson.birth).getFullYear())) < 18;
     });
     return result.length;
 }
