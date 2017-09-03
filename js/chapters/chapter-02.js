@@ -22,6 +22,39 @@
  * - The decleration order of functions is not important!
  */
 
-
-
-//coming soon...
+function findNumberOfPassengersByMinChildren(pPassengers, pNoOfChildren){
+    return pPassengers;
+}
+function findNumberPassengersByMinChildrenAndGender(pPassengers, pNoOfChildren, pGender){
+    return pPassengers;
+}
+function findNumberOfPassengersByCountry(pPassengers, pCountry){
+    return pPassengers;
+}
+function findNumberOfPassengersByChildrenAndCountry(pPassengers, pNoOfChildren, pCountry){
+    return pPassengers;
+}
+function findNumberOfPassengersByLanguageAndGender(pPassengers, pLanguage, pGender){
+    return pPassengers;
+}
+function findNumberOfPassengersByLanguageAndGenderAndCountry(pPassengers, pLanguage, pGender, pCountry){
+    return pPassengers;
+}
+function findNumberOfPassengersByLanguageAndSalaryAndNumberOfChildren(pPassengers, pLangauge, pSalary, pNoOfChildren){
+    return pPassengers;
+}
+function isThereAnyPersonBySalaryAndCountry(pPassengers, pSalary, pCountry){
+    return pPassengers;
+}
+function findNumberOfPassengersByEntryDate(pPassengers, pEntryDate){
+    return pPassengers;
+}
+function findNamesOfPassengersByOrigin(pPassengers, pOrigin){
+    return pPassengers; 
+}
+function findNamesOfPassengersByHoroscope(pPassengers, pHoroscopeSign){
+    return pPassengers;    
+}
+function findNamesOfPassengersByAcceptedAndNotAcceptedLanguages(pPassengers, pAccesptedLanguages, pNotAcceptedLanguages){
+    return pPassengers;
+}
